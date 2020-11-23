@@ -30,12 +30,12 @@
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <platform name="android">
-        <icon density="ldpi" src="www/res/icon/android/logo.jpg" />
-        <icon density="mdpi" src="www/res/icon/android/logo.jpg" />
-        <icon density="hdpi" src="www/res/icon/android/logo.jpg" />
-        <icon density="xhdpi" src="www/res/icon/android/logo.jpg" />
-        <icon density="xxhdpi" src="www/res/icon/android/logo.jpg" />
-        <icon density="xxxhdpi" src="www/res/icon/android/logo.jpg" />
+        <icon density="ldpi" src="www/res/icon/android/logo.png" />
+        <icon density="mdpi" src="www/res/icon/android/logo.png" />
+        <icon density="hdpi" src="www/res/icon/android/logo.png" />
+        <icon density="xhdpi" src="www/res/icon/android/logo.png" />
+        <icon density="xxhdpi" src="www/res/icon/android/logo.png" />
+        <icon density="xxxhdpi" src="www/res/icon/android/logo.png" />
         <splash density="land-ldpi" src="www/res/screen/android/logo.jpg" />
         <splash density="land-mdpi" src="www/res/screen/android/logo.jpg" />
         <splash density="land-hdpi" src="www/res/screen/android/logo.jpg" />
