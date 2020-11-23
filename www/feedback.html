@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>App Rate</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Pontano+Sans' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div data-role="page" id="FeedbackPage">
+        <div class="header-wrap">
+            <div class="header">
+                <div class="menu">
+                    <ul>
+                        <li id="index"><a href="#home">Home</a></li>
+                        <li><a href="feedback.html" class="active">Feedback</a></li>
+                        <!-- <li id="search"><a href="#search" class="active">Search</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end of header wrapper -->
+        <div class="logo-sarch-wrap">
+            <div class="logo-search-container">
+                <div class="logo">
+                    <h1>Rate restaurant</h1>
+                </div>
+            </div>
+        </div>
+        <!-- end of header wrapper -->
+        <div class="container">
+            <div class="wrap">
+                <form class="contact100-form validate-form" id="addRate" name="addRate">
+                    <span class="contact100-form-title">
+                Feedback Form
+                    </span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Restaurant Name</span>
+                        <input class="input100" type="text" id="rName" name="rName" placeholder="Enter restaurant name" required>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Restaurant Type</span>
+                        <input class="input100" type="text" id="rType" name="rType" placeholder="Enter restaurant type" required>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Restaurant Address</span>
+                        <input class="input100" type="text" id="rAddress" name="rAddress" placeholder="Enter restaurant address" required>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Date and time of the visit</span>
+                        <input class="input100" type="datetime-local" id="date_time" name="date_time" placeholder="Enter Date and time of the visit" required>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Average meal price per person</span>
+                        <input class="input100" type="number" id="avgCost" name="avgCost" placeholder="Enter Average meal price per person" required>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Image</span>
+                        <input class="input100" type="file"  placeholder="Enter Image" >
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 input100-select">
+                        <span class="label-input100">Service rating (Choose Star to Rate)</span>
+                        <div>
+                            <select class="selection-2" id="ratingForService" name="ratingForService"  required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 input100-select">
+                        <span class="label-input100">Cleanliness rating (Choose Star to Rate)</span>
+                        <div>
+                            <select class="selection-2" id="ratingForClean" name="ratingForClean" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 input100-select">
+                        <span class="label-input100">Food quality rating (Choose Star to Rate)</span>
+                        <div>
+                            <select class="selection-2" id="ratingForFood" name="ratingForFood" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Message is required">
+                        <span class="label-input100">Notes</span>
+                        <textarea class="input100" id="notes" name="notes" placeholder="Your notes here..."></textarea>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Name of the reporter</span>
+                        <input class="input100" type="text" id="rOwnerRate" name="rOwnerName" placeholder="Enter name of the reporter" required>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="container-form-btn">
+                        <div class="wrap-form-btn">
+                            <div class="contact100-form-bgbtn"></div>
+                            <button class="contact100-form-btn" type="submit">
+                        <span>
+                            Send Feedback
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="dropDownSelect1"></div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script>
+        $(".selection-2").select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $('#dropDownSelect1')
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/list.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+
+</body>
+
+</html>
